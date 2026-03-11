@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
+:root {
+  --pixel-bg: #212529;
+  --pixel-text: #ffffff;
+  --pixel-primary: #209cee;
+  --pixel-secondary: #92cc41;
+  --pixel-danger: #e76e55;
+  --pixel-warning: #f7d51d;
+  --pixel-border: #ffffff;
+  --pixel-shadow: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Times New Roman', 'Noto Sans TC', serif;
+  image-rendering: pixelated;
+}
+
+body {
+  background-color: var(--pixel-bg);
+  color: var(--pixel-text);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+#root {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Pixel Border Utility */
+.pixel-border {
+  border: 4px solid var(--pixel-border);
+  box-shadow: 4px 4px 0px 0px var(--pixel-shadow);
+  background: var(--pixel-bg);
+  padding: 20px;
+  position: relative;
+}
+
+/* Animations */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink { animation: blink 1s infinite; }
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+  * { font-size: 10px; }
+  #root { padding: 10px; }
+}
