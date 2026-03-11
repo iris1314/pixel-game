@@ -6,10 +6,11 @@
     "build": "vite build"
   },
   "dependencies": {
+    "canvas-confetti": "^1.9.3",
+    "gh-pages": "^6.3.0",
+    "lucide-react": "^0.378.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "lucide-react": "^0.378.0",
-    "canvas-confetti": "^1.9.3",
     "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
@@ -17,5 +18,10 @@
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
     "vite": "^5.3.1"
-  }
+  },
+  "description": "這是一個具備 2000 年代街機風格的像素風問答遊戲。前端使用 React Vite 建置，後端整合 Google Sheets 與 Google Apps Script (GAS)。",
+  "main": "gas-backend.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
